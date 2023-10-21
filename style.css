@@ -1,0 +1,198 @@
+body {
+  background-color: rgba(0, 0, 0, 3);
+  background-size: cover;
+}
+/* Importing Google font - Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+}
+
+h1 span {
+  color: red;
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 30px;
+}
+
+h1 span::before {
+  content: '';
+  height: 30px;
+  width: 2px;
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  background: #bd53ed;
+  transform: translateY(-45%);
+  animation: blink 0.7s infinite;
+}
+
+h1 span.stop-blinking::before {
+  animation: none;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+footer {
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+.navbar {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+}
+.navbar-brand {
+  font-family: 'Outfit', sans-serif;
+  color: white;
+}
+
+.navbar-brand span {
+  color: red;
+}
+.navbar-nav {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav-link {
+  margin-right: 15px;
+}
+
+.jumbotron {
+  color: rgb(10, 0, 0);
+  padding-top: 10px;
+}
+
+.rounder-circlee {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.jumbotron .display-4 {
+  font-family: 'Lexend', sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.judul {
+  font-family: 'Lexend', sans-serif;
+  color: white;
+  font-size: 30px;
+}
+
+.isi {
+  color: white;
+  font-family: 'Acme', sans-serif;
+  font-size: 15px;
+  padding-bottom: 50px;
+}
+
+.gambar {
+  width: 80px;
+  height: 60px;
+}
+
+.card1 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.gambar2 {
+  width: 30px;
+  height: 30px;
+}
+
+.padding {
+  padding-top: 150px;
+}
+
+.card-text {
+  font-family: 'Josefin Sans', sans-serif;
+  position: relative;
+}
+.card-header {
+  font-family: 'Josefin Sans', sans-serif;
+  color: red;
+}
+
+.card-body img {
+  margin-top: 10px;
+  width: 45px;
+  height: 40px;
+
+  opacity: 50%;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  cursor: default;
+  width: 100%;
+}
+
+.card img {
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+.card img:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.col p {
+  color: white;
+}
+
+.borderr {
+  border-bottom: 1px solid white;
+}
+
+.card {
+  border: 1px solid white;
+}
+
+.card-header {
+  border: 0.1px solid white;
+}
+.border-top {
+  border-top: 1px solid white;
+}
+.btn {
+  font-family: 'Josefin Sans', sans-serif;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+  outline: 2px solid black;
+}
+
+.row {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.padding-top {
+  padding-top: 500px;
+}
